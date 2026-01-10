@@ -1,0 +1,2 @@
+document.writeln("hola bebe")
+
