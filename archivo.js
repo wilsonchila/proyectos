@@ -1,2 +1,1 @@
-document.writeln("hola bebe")
-
+document.writeln("hola commo estas")
