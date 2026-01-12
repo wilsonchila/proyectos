@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <h1>Acceso de usuarios</h1>
+        ingrese usuario
+        <br>
+        <input  type="text" id="usuario">
+        <br>
+        ingrese clave
+        <br>
+        <input  type="password" id="clave">
+        <br>
+        <input type="button" value="Confirmar" onclick="verificar()">
+    </form>
+    <script>
+        let control = 0;
+        let contrasenia = 'acceso01'; 
+
+      function verificar(){
+        let clave = document.getElementById('clave').value;
+        if(clave != contrasenia || clave == ""){
+            alert('CLAVE INCORECTA INTENTE DE NUEVO');
+            control ++;
+         
+
+        if(control >= 3){
+            alert("acceso denegados")               
+
+        }
+    }
+        else{
+            window.open("http://www.google.com");
+           
+        }
+
+      }  
+    </script>
+
+    
+</body>
+</html>
